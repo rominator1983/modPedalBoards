@@ -1,0 +1,206 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "_muff_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "TONE": 0.5,
+                        "VOLUME": 0.57421875
+                    },
+                    "preset": ""
+                },
+                "_aclipper_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "DRIVE": 0.20703125,
+                        "LEVEL": -7.0,
+                        "TONE": 0.5,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "gate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "switch": 1.0,
+                        "threshold": -64.32589285714286,
+                        "attack": 0.10000000149011612,
+                        "hold": 5.0,
+                        "decay": 5.0,
+                        "gaterange": -20.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "MasterGain": 0.0,
+                        "PreGain": 0.0,
+                        "Distortion": 20.0,
+                        "Drive": 0.25,
+                        "Middle": 0.5,
+                        "Bass": 0.5,
+                        "Treble": 0.5,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 3.0,
+                        "t_model": 8.0,
+                        "c_model": 0.0,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "_reverb_stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "dry_wet": 50.0,
+                        "lfo": 0.20000000298023224,
+                        "roomsize": 0.5,
+                        "damp": 0.20000000298023224,
+                        "mode": 0.0
+                    },
+                    "preset": ""
+                },
+                "modmeter": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "reset": 1.0
+                    },
+                    "preset": ""
+                },
+                "CABINET": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.5848214285714284,
+                        "CBass": 0.0,
+                        "CTreble": 1.015625,
+                        "c_model": 1.0,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/usr/lib/lv2/cabsim-IR-loader.lv2/forward-audio_AliceInBones.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": 0.0
+                    },
+                    "preset": ""
+                },
+                "studiopre": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "bright": 0.0,
+                        "volume": 3.8647342995169094,
+                        "bass": 0.5,
+                        "middle": 0.5,
+                        "treble": 0.5
+                    },
+                    "preset": ""
+                },
+                "_supersonic_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.09903381642512073,
+                        "BASS": 0.5,
+                        "TREBLE": 0.5,
+                        "VOLUME": 0.16908212560386468
+                    },
+                    "preset": ""
+                },
+                "NeuralPi": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "gain": 0.5,
+                        "master": 0.2092633928571428,
+                        "bass": 0.5,
+                        "mid": 0.5,
+                        "treble": 0.5,
+                        "presence": 0.1852678571428574,
+                        "model": 0.01841517857142859,
+                        "ir": 0.0,
+                        "delay": 0.0,
+                        "reverb": 0.9648437500000002
+                    },
+                    "preset": ""
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "MasterGain": 0.0,
+                        "PreGain": 0.0,
+                        "Distortion": 20.0,
+                        "Drive": 0.25,
+                        "Middle": 0.5,
+                        "Bass": 0.5,
+                        "Treble": 0.5,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 1.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "gate_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "switch": 1.0,
+                        "threshold": -65.33258928571429,
+                        "attack": 0.10000000149011612,
+                        "hold": 5.0,
+                        "decay": 5.0,
+                        "gaterange": -90.0
+                    },
+                    "preset": ""
+                },
+                "ts9sim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "fslider0_": -7.8125,
+                        "fslider1_": 735.8258928571429,
+                        "fslider2_": 0.1824776785714286
+                    },
+                    "preset": ""
+                },
+                "splineDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 1.5
+                    },
+                    "preset": ""
+                },
+                "alaw": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {},
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

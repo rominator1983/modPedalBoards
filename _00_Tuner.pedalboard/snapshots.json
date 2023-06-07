@@ -1,0 +1,26 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "mod": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "mode": 0.0,
+                        "tuning": 440.0,
+                        "thresholdRMS": -75.0,
+                        "thresholdPostFilter": -45.0,
+                        "thresholdFFT": -40.0,
+                        "thresholdOverride": 20.0,
+                        "thresholdFundamental": 5.0,
+                        "thresholdOctave": -30.0,
+                        "thresholdOvertones": -15.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

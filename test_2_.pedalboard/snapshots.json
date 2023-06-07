@@ -1,0 +1,175 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/home/roman/mod/user-files/Speaker Cabinets IRs/Angie selection/V2-Angie-d-D202-A1.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": -3.6428571428571246
+                    },
+                    "preset": ""
+                },
+                "SwankyAmp": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "inputlevel": 0.48995535714285754,
+                        "outputlevel": 0.5,
+                        "tslow": 0.9626116071428572,
+                        "tsmid": 1.0,
+                        "tshigh": 0.7187499999999997,
+                        "tspresence": 0.4157366071428573,
+                        "tsselection": 0.2907366071428571,
+                        "gainstages": 1.0,
+                        "gainoverhead": 0.8560267857142856,
+                        "lowcut": 0.503348214285714,
+                        "cabonoff": 0.0,
+                        "cabbrightness": 0.5,
+                        "cabdistance": 0.5,
+                        "cabdynamic": 0.3833705357142857,
+                        "preampdrive": 0.0,
+                        "preamptight": 1.0,
+                        "preampgrit": 0.0,
+                        "powerampdrive": 0.5111607142857139,
+                        "poweramptight": 0.0,
+                        "powerampgrit": 0.0,
+                        "powerampsag": 0.03627232142857134,
+                        "powerampsagratio": 0.16350446428571414
+                    },
+                    "preset": ""
+                },
+                "Advanced_NoiseGate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Threshold": -76.71875,
+                        "Attack": 1.0,
+                        "Hold": 1.5552455357142856,
+                        "Decay": 4.344866071428461
+                    },
+                    "preset": ""
+                },
+                "DS1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.14996824513810303,
+                        "Level": 0.5,
+                        "Dist": 0.05474449728230574
+                    },
+                    "preset": ""
+                },
+                "_hotbox_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BASS": 0.4352678571428569,
+                        "GAIN": 0.5128348214285717,
+                        "TREBLE": 0.38950892857142805,
+                        "VOLUME": 0.42131696428571425
+                    },
+                    "preset": ""
+                },
+                "Loudness": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "loudness": 1.0,
+                        "output": 0.4921875,
+                        "link": 0.3499999940395355
+                    },
+                    "preset": ""
+                },
+                "SwankyAmp_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "inputlevel": 0.5,
+                        "outputlevel": 0.5,
+                        "tslow": 0.5,
+                        "tsmid": 0.5,
+                        "tshigh": 0.5,
+                        "tspresence": 0.5,
+                        "tsselection": 0.0,
+                        "gainstages": 0.5,
+                        "gainoverhead": 0.5,
+                        "lowcut": 0.5,
+                        "cabonoff": 0.0,
+                        "cabbrightness": 0.5,
+                        "cabdistance": 0.5,
+                        "cabdynamic": 0.3499999940395355,
+                        "preampdrive": 0.30000001192092896,
+                        "preamptight": 0.5,
+                        "preampgrit": 0.5,
+                        "powerampdrive": 0.4000000059604645,
+                        "poweramptight": 0.5,
+                        "powerampgrit": 0.5,
+                        "powerampsag": 0.20000000298023224,
+                        "powerampsagratio": 0.5
+                    },
+                    "preset": ""
+                },
+                "splineDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 1.0,
+                        "preserveDynamics": 1.0
+                    },
+                    "preset": ""
+                },
+                "a_reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5,
+                        "enable": 1.0
+                    },
+                    "preset": ""
+                },
+                "_SunFace_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "DRIVE": 0.8978794642857145,
+                        "INPUT": 0.5,
+                        "VOLUME": 0.38281249999999994
+                    },
+                    "preset": ""
+                },
+                "sooperlooper_2x2": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "play_pause": 1.0,
+                        "record": 0.0,
+                        "reset": 1.0,
+                        "undo": 0.0,
+                        "redo": 0.0,
+                        "dryLevel": 1.0
+                    },
+                    "preset": ""
+                },
+                "midi_display_lv2": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {},
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

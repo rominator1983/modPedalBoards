@@ -1,0 +1,341 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "_muff_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "TONE": 0.5,
+                        "VOLUME": 0.470424107142857
+                    },
+                    "preset": ""
+                },
+                "_aclipper_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "DRIVE": 0.20703125,
+                        "LEVEL": -7.0,
+                        "TONE": 0.5,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "gate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "switch": 1.0,
+                        "threshold": -64.32589285714286,
+                        "attack": 0.10000000149011612,
+                        "hold": 5.0,
+                        "decay": 5.0,
+                        "gaterange": -20.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "MasterGain": 0.0,
+                        "PreGain": 0.0,
+                        "Distortion": 20.0,
+                        "Drive": 0.25,
+                        "Middle": 0.5,
+                        "Bass": 0.5,
+                        "Treble": 0.5,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 3.0,
+                        "t_model": 8.0,
+                        "c_model": 0.0,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "_reverb_stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "dry_wet": 50.0,
+                        "lfo": 0.20000000298023224,
+                        "roomsize": 0.5,
+                        "damp": 0.20000000298023224,
+                        "mode": 0.0
+                    },
+                    "preset": ""
+                },
+                "modmeter": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "reset": 1.0
+                    },
+                    "preset": ""
+                },
+                "CABINET": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.5848214285714284,
+                        "CBass": 0.0,
+                        "CTreble": 1.015625,
+                        "c_model": 1.0,
+                        "BYPASS": 1.0
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/usr/lib/lv2/cabsim-IR-loader.lv2/forward-audio_AliceInBones.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": 0.0
+                    },
+                    "preset": ""
+                },
+                "studiopre": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "bright": 0.0,
+                        "volume": 3.8647342995169094,
+                        "bass": 0.5,
+                        "middle": 0.5,
+                        "treble": 0.5
+                    },
+                    "preset": ""
+                },
+                "_supersonic_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.09903381642512073,
+                        "BASS": 0.5,
+                        "TREBLE": 0.5,
+                        "VOLUME": 0.16908212560386468
+                    },
+                    "preset": ""
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.5,
+                        "GATE": -55.0,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.10000000149011612,
+                        "LEVEL": -10.0
+                    },
+                    "preset": ""
+                },
+                "PlateX2": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "bandwidth": 0.0,
+                        "tail": 0.21763392857142871,
+                        "damping": 0.1986607142857143,
+                        "blend": 0.296875
+                    },
+                    "preset": ""
+                },
+                "vibrochump": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Gain": 5.22321428571431,
+                        "Tone": 0.0,
+                        "Volume": 0.0,
+                        "Feedback": 1.0,
+                        "Vibe": 0.0,
+                        "Speed": 5.0,
+                        "Intensity": 4.414062499999999,
+                        "Sinewave": 0.0
+                    },
+                    "preset": ""
+                },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "enable": 1.0,
+                        "gain": 0.0,
+                        "peakreset": 1.0,
+                        "HighPass": 0.0,
+                        "HPfreq": 20.0,
+                        "HPQ": 0.699999988079071,
+                        "LowPass": 1.0,
+                        "LPfreq": 20000.0,
+                        "LPQ": 1.0,
+                        "LSsec": 1.0,
+                        "LSfreq": 80.0,
+                        "LSq": 1.0,
+                        "LSgain": 0.0,
+                        "sec1": 1.0,
+                        "freq1": 160.0,
+                        "q1": 0.6000000238418579,
+                        "gain1": 0.0,
+                        "sec2": 1.0,
+                        "freq2": 397.0,
+                        "q2": 0.6000000238418579,
+                        "gain2": 0.0,
+                        "sec3": 1.0,
+                        "freq3": 1250.0,
+                        "q3": 0.6000000238418579,
+                        "gain3": 0.0,
+                        "sec4": 1.0,
+                        "freq4": 3064.0641447444877,
+                        "q4": 1.8225097656249998,
+                        "gain4": -4.781249999999998,
+                        "HSsec": 1.0,
+                        "HSfreq": 8000.0,
+                        "HSq": 1.0,
+                        "HSgain": 0.0
+                    },
+                    "preset": ""
+                },
+                "_voxbass_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BASS": 0.5,
+                        "CAB": 0.0,
+                        "MID": 0.5,
+                        "TREBLE": 0.20000000298023224,
+                        "VOLUME": 0.5474330357142858
+                    },
+                    "preset": ""
+                },
+                "_bajatubedriver_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "DRIVE": 0.9468599033816425,
+                        "TONE": 0.14251207729468582,
+                        "VOLUME": 0.3400000035762787
+                    },
+                    "preset": ""
+                },
+                "noClipDistortion": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 2.0
+                    },
+                    "preset": ""
+                },
+                "SuperCapo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Step": 12.0,
+                        "Gain": 4.9330357142857295,
+                        "Fidelity": 2.0
+                    },
+                    "preset": ""
+                },
+                "splineDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 1.0
+                    },
+                    "preset": ""
+                },
+                "rectifyingOctave": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 1.5
+                    },
+                    "preset": ""
+                },
+                "xfade": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "xfade": -0.30691964285714246
+                    },
+                    "preset": ""
+                },
+                "justOneOctaveUp": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "blend": 0.75,
+                        "silenceThreshold": 9.999999747378752e-05
+                    },
+                    "preset": ""
+                },
+                "Capo": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "Step": 12.0,
+                        "Gain": 0.3571428571428612,
+                        "Fidelity": 2.0
+                    },
+                    "preset": ""
+                },
+                "_epic_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.5982142857142857,
+                        "TONE": 0.5,
+                        "VOLUME": 0.39341517857142844,
+                        "BOOST": 0.0
+                    },
+                    "preset": ""
+                },
+                "Freaktail": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "Decay": 0.9399999976158142,
+                        "Roomsize": 0.7900000214576721,
+                        "Tail_level": 0.19291294776485302
+                    },
+                    "preset": ""
+                },
+                "bolliedelay": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "tempo_host": 120.0,
+                        "tempo_user": 214.56250000000003,
+                        "tempo_mode": 2.0,
+                        "tap": 1.0,
+                        "mix": 37.276785714285744,
+                        "feedback": 79.35267857142858,
+                        "crossf": 50.55803571428572,
+                        "low_on": 0.0,
+                        "low_f": 20.0,
+                        "low_q": 1.0,
+                        "high_on": 0.0,
+                        "high_f": 7500.0,
+                        "high_q": 8.0,
+                        "div_l": 1.0,
+                        "div_r": 4.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

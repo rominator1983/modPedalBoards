@@ -1,0 +1,26 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
+	state:state [
+		<urn:juce:stateString> """<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="0" version="1">
+  <programs>
+    <program programname="default" dry="-21.776157379150390625" wet="-60.948177337646484375"
+             roomsize="0.76674097776412963867" predelay="41.294643402099609375"
+             lowshelffrequency="461" highshelffrequency="1549" peakfrequency="858"
+             lowshelfgain="-1.8999999761581420898" highshelfgain="-3.7999999523162841797"
+             peakgain="-18" stereowidth="1" realstereomode="0"/>
+  </programs>
+</tal>
+"""
+	] .
+

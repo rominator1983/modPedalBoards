@@ -1,0 +1,820 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix ingen: <http://drobilla.net/ns/ingen#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+@prefix pedal: <http://moddevices.com/ns/modpedal#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:b1
+    ingen:tail <capture_2> ;
+    ingen:head <splineDrive/in> .
+
+_:b2
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <a_reverb/in0> .
+
+_:b3
+    ingen:tail <splineDrive/out> ;
+    ingen:head <_hotbox_/in> .
+
+_:b4
+    ingen:tail <_SunFace_/out> ;
+    ingen:head <SwankyAmp_1/lv2_audio_in_2> .
+
+_:b5
+    ingen:tail <a_reverb/out0> ;
+    ingen:head <sooperlooper_2x2/input0> .
+
+_:b6
+    ingen:tail <a_reverb/out1> ;
+    ingen:head <sooperlooper_2x2/input1> .
+
+_:b7
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <a_reverb/in1> .
+
+_:b8
+    ingen:tail <SwankyAmp_1/lv2_audio_out_1> ;
+    ingen:head <cabsim_IR_loader/in> .
+
+_:b9
+    ingen:tail <midi_capture_2> ;
+    ingen:head <midi_display_lv2/in> .
+
+_:b10
+    ingen:tail <sooperlooper_2x2/output1> ;
+    ingen:head <playback_2> .
+
+_:b11
+    ingen:tail <_SunFace_/out> ;
+    ingen:head <SwankyAmp_1/lv2_audio_in_1> .
+
+_:b12
+    ingen:tail <sooperlooper_2x2/output0> ;
+    ingen:head <playback_1> .
+
+_:b13
+    ingen:tail <_hotbox_/out> ;
+    ingen:head <_SunFace_/in> .
+
+<SwankyAmp_1>
+    ingen:canvasX 1889.0 ;
+    ingen:canvasY 324.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 4 ;
+    lv2:minorVersion 2 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <SwankyAmp_1/lv2_audio_in_1> ,
+             <SwankyAmp_1/lv2_audio_in_2> ,
+             <SwankyAmp_1/lv2_audio_out_1> ,
+             <SwankyAmp_1/lv2_audio_out_2> ,
+             <SwankyAmp_1/lv2_freewheel> ,
+             <SwankyAmp_1/inputlevel> ,
+             <SwankyAmp_1/outputlevel> ,
+             <SwankyAmp_1/tslow> ,
+             <SwankyAmp_1/tsmid> ,
+             <SwankyAmp_1/tshigh> ,
+             <SwankyAmp_1/tspresence> ,
+             <SwankyAmp_1/tsselection> ,
+             <SwankyAmp_1/gainstages> ,
+             <SwankyAmp_1/gainoverhead> ,
+             <SwankyAmp_1/lowcut> ,
+             <SwankyAmp_1/cabonoff> ,
+             <SwankyAmp_1/cabbrightness> ,
+             <SwankyAmp_1/cabdistance> ,
+             <SwankyAmp_1/cabdynamic> ,
+             <SwankyAmp_1/preampdrive> ,
+             <SwankyAmp_1/preamptight> ,
+             <SwankyAmp_1/preampgrit> ,
+             <SwankyAmp_1/powerampdrive> ,
+             <SwankyAmp_1/poweramptight> ,
+             <SwankyAmp_1/powerampgrit> ,
+             <SwankyAmp_1/powerampsag> ,
+             <SwankyAmp_1/powerampsagratio> ,
+             <SwankyAmp_1/:bypass> ;
+    lv2:prototype <urn:distrho:SwankyAmp> ;
+    pedal:instanceNumber 41 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<SwankyAmp_1/lv2_audio_in_1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/lv2_audio_in_2>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/lv2_audio_in_1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<SwankyAmp_1/lv2_audio_in_2>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<SwankyAmp_1/lv2_freewheel>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/inputlevel>
+    ingen:value 0.608817 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/outputlevel>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/tslow>
+    ingen:value 0.411830 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/tsmid>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/tshigh>
+    ingen:value 0.638393 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/tspresence>
+    ingen:value 0.544643 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/tsselection>
+    ingen:value 0.201451 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/gainstages>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/gainoverhead>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/lowcut>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/cabonoff>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/cabbrightness>
+    ingen:value 0.474330 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/cabdistance>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/cabdynamic>
+    ingen:value 0.301897 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/preampdrive>
+    ingen:value 0.383929 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/preamptight>
+    ingen:value 0.410714 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/preampgrit>
+    ingen:value 0.164062 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/powerampdrive>
+    ingen:value 0.387835 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/poweramptight>
+    ingen:value 0.992187 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/powerampgrit>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/powerampsag>
+    ingen:value 0.200000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/powerampsagratio>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<SwankyAmp_1/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_SunFace_>
+    ingen:canvasX 1532.0 ;
+    ingen:canvasY 628.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 34 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <_SunFace_/in> ,
+             <_SunFace_/out> ,
+             <_SunFace_/BYPASS> ,
+             <_SunFace_/DRIVE> ,
+             <_SunFace_/INPUT> ,
+             <_SunFace_/VOLUME> ,
+             <_SunFace_/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_SunFace_#_SunFace_> ;
+    pedal:instanceNumber 44 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<_SunFace_/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<_SunFace_/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<_SunFace_/BYPASS>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_SunFace_/DRIVE>
+    ingen:value 0.897879 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_SunFace_/INPUT>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_SunFace_/VOLUME>
+    ingen:value 0.382812 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_SunFace_/:bypass>
+    ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_>
+    ingen:canvasX 1212.0 ;
+    ingen:canvasY 182.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 34 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <_hotbox_/in> ,
+             <_hotbox_/out> ,
+             <_hotbox_/BYPASS> ,
+             <_hotbox_/BASS> ,
+             <_hotbox_/GAIN> ,
+             <_hotbox_/TREBLE> ,
+             <_hotbox_/VOLUME> ,
+             <_hotbox_/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_hotbox_#_hotbox_> ;
+    pedal:instanceNumber 38 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<_hotbox_/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<_hotbox_/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<_hotbox_/BYPASS>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_/BASS>
+    ingen:value 0.435268 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_/GAIN>
+    ingen:value 0.603795 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_/TREBLE>
+    ingen:value 0.655134 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_/VOLUME>
+    ingen:value 0.421317 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_hotbox_/:bypass>
+    ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<a_reverb>
+    ingen:canvasX 2881.0 ;
+    ingen:canvasY 459.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 4 ;
+    lv2:minorVersion 2 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <a_reverb/in0> ,
+             <a_reverb/in1> ,
+             <a_reverb/out0> ,
+             <a_reverb/out1> ,
+             <a_reverb/blend> ,
+             <a_reverb/roomsz> ,
+             <a_reverb/enable> ,
+             <a_reverb/:bypass> ;
+    lv2:prototype <urn:distrho:a-reverb> ;
+    pedal:instanceNumber 43 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<a_reverb/in0>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<a_reverb/in1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<a_reverb/in0>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<a_reverb/in1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<a_reverb/blend>
+    ingen:value 0.448103 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<a_reverb/roomsz>
+    ingen:value 0.895926 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<a_reverb/enable>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<a_reverb/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader>
+    ingen:canvasX 2284.0 ;
+    ingen:canvasY 263.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <cabsim_IR_loader/in> ,
+             <cabsim_IR_loader/out> ,
+             <cabsim_IR_loader/Gain> ,
+             <cabsim_IR_loader/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
+    pedal:instanceNumber 1 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<cabsim_IR_loader/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<cabsim_IR_loader/Gain>
+    ingen:value -5.223214 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<midi_display_lv2>
+    ingen:canvasX 946.0 ;
+    ingen:canvasY 1111.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <midi_display_lv2/midi_received> ,
+             <midi_display_lv2/midi_msg_1> ,
+             <midi_display_lv2/midi_msg_2> ,
+             <midi_display_lv2/midi_msg_3> ,
+             <midi_display_lv2/in> ,
+             <midi_display_lv2/:bypass> ;
+    lv2:prototype <https://github.com/vallsv/midi-display.lv2> ;
+    pedal:instanceNumber 49 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<midi_display_lv2/in>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_display_lv2/midi_received>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<midi_display_lv2/midi_msg_1>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<midi_display_lv2/midi_msg_2>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<midi_display_lv2/midi_msg_3>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<midi_display_lv2/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2>
+    ingen:canvasX 3433.0 ;
+    ingen:canvasY 467.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 9 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <sooperlooper_2x2/input0> ,
+             <sooperlooper_2x2/input1> ,
+             <sooperlooper_2x2/output0> ,
+             <sooperlooper_2x2/output1> ,
+             <sooperlooper_2x2/play_pause> ,
+             <sooperlooper_2x2/record> ,
+             <sooperlooper_2x2/reset> ,
+             <sooperlooper_2x2/undo> ,
+             <sooperlooper_2x2/redo> ,
+             <sooperlooper_2x2/dryLevel> ,
+             <sooperlooper_2x2/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/sooperlooper-2x2> ;
+    pedal:instanceNumber 48 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<sooperlooper_2x2/input0>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/input1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/input0>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<sooperlooper_2x2/input1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<sooperlooper_2x2/play_pause>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/record>
+    ingen:value 0.000000 ;
+    midi:binding [
+        midi:channel 0 ;
+        midi:controllerNumber 1 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/reset>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/undo>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/redo>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/dryLevel>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<sooperlooper_2x2/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive>
+    ingen:canvasX 760.0 ;
+    ingen:canvasY 375.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <splineDrive/in> ,
+             <splineDrive/out> ,
+             <splineDrive/gain> ,
+             <splineDrive/preserveDynamics> ,
+             <splineDrive/:bypass> ;
+    lv2:prototype <http://lv2plug.in/plugins/splineDrive> ;
+    pedal:instanceNumber 42 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<splineDrive/gain>
+    ingen:value 1.793929 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/preserveDynamics>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:bpb>
+    ingen:value 4.000000 ;
+    lv2:index 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:bpm>
+    ingen:value 120.000000 ;
+    lv2:index 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:rolling>
+    ingen:value 0 ;
+    lv2:index 2 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<control_in>
+    atom:bufferType atom:Sequence ;
+    lv2:index 3 ;
+    lv2:name "Control In" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_in" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<control_out>
+    atom:bufferType atom:Sequence ;
+    lv2:index 4 ;
+    lv2:name "Control Out" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_out" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<capture_1>
+    lv2:index 5 ;
+    lv2:name "Capture 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_1" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_2>
+    lv2:index 6 ;
+    lv2:name "Capture 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_2" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<playback_1>
+    lv2:index 7 ;
+    lv2:name "Playback 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_1" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_2>
+    lv2:index 8 ;
+    lv2:name "Playback 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_2" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<midi_capture_2>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 9 ;
+    lv2:name "Steinberg UR22mkII MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_2" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_capture_3>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 10 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_3" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_capture_4>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 11 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_4" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_playback_2>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 12 ;
+    lv2:name "Steinberg UR22mkII MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_2" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_playback_4>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 13 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_4" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_playback_4>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 14 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_4" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_separated_mode>
+    ingen:value 1 ;
+    lv2:index 15 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_loopback>
+    ingen:value 0 ;
+    lv2:index 16 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<>
+    doap:name "default" ;
+    pedal:unitName "Unknown" ;
+    pedal:unitModel "None" ;
+    pedal:width 3072 ;
+    pedal:height 1152 ;
+    pedal:addressings <addressings.json> ;
+    pedal:screenshot <screenshot.png> ;
+    pedal:thumbnail <thumbnail.png> ;
+    pedal:version 21 ;
+    ingen:polyphony 1 ;
+    ingen:arc _:b1 ,
+              _:b2 ,
+              _:b3 ,
+              _:b4 ,
+              _:b5 ,
+              _:b6 ,
+              _:b7 ,
+              _:b8 ,
+              _:b9 ,
+              _:b10 ,
+              _:b11 ,
+              _:b12 ,
+              _:b13 ;
+    ingen:block <SwankyAmp_1> ,
+                <_SunFace_> ,
+                <_hotbox_> ,
+                <a_reverb> ,
+                <cabsim_IR_loader> ,
+                <midi_display_lv2> ,
+                <sooperlooper_2x2> ,
+                <splineDrive> ;
+    lv2:port <:bpb> ,
+             <:bpm> ,
+             <:rolling> ,
+             <midi_separated_mode> ,
+             <midi_loopback> ,
+             <control_in> ,
+             <control_out> ,
+             <midi_capture_2> ,
+             <midi_capture_3> ,
+             <midi_capture_4> ,
+             <midi_playback_2> ,
+             <midi_playback_4> ,
+             <midi_playback_4> ,
+             <capture_1> ,
+             <capture_2> ,
+             <playback_1> ,
+             <playback_2> ;
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
+    a lv2:Plugin ,
+        ingen:Graph ,
+        pedal:Pedalboard .
