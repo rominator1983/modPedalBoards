@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic> ;
 	state:state [
-		<http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json> <AMP%20Orange%20Dirty.json>
+		<http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json> <AMP%20Blues%20Deluxe%20Clean2.json>
 	] .
 

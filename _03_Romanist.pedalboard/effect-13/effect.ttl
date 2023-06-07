@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
 	state:state [
-		<http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir> <V2-TBAC65-d-MD421-A1.wav>
+		<http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir> <V2-Angie-d-D202-A1.wav>
 	] .
 

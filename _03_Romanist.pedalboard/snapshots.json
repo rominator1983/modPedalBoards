@@ -273,7 +273,7 @@
                     "preset": ""
                 },
                 "splineDrive": {
-                    "bypassed": true,
+                    "bypassed": false,
                     "parameters": {},
                     "ports": {
                         "gain": 1.0,
@@ -377,6 +377,22 @@
                         "vwarptype": 0.0,
                         "vwarpamount": 0.0
                     },
+                    "preset": ""
+                },
+                "ts9sim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "fslider0_": -11.0,
+                        "fslider1_": 1000.0,
+                        "fslider2_": 0.5
+                    },
+                    "preset": ""
+                },
+                "alaw": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {},
                     "preset": ""
                 }
             }

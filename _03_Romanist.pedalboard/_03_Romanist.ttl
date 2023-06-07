@@ -12,60 +12,60 @@ _:b1
     ingen:head <playback_2> .
 
 _:b2
-    ingen:tail <gate/output> ;
-    ingen:head <splineDrive/in> .
-
-_:b3
     ingen:tail <PlateX2/outl> ;
     ingen:head <_echo_stereo/in> .
 
-_:b4
+_:b3
     ingen:tail <PlateX2/outr> ;
     ingen:head <_echo_stereo/in1> .
 
-_:b5
+_:b4
     ingen:tail <cabsim_IR_loader/out> ;
     ingen:head <PlateX2/inr> .
 
-_:b6
-    ingen:tail <splineDrive/out> ;
-    ingen:head <_slowgear_/in> .
-
-_:b7
-    ingen:tail <wolf_shaper/lv2_audio_out_1> ;
-    ingen:head <rt_neural_generic/IN> .
-
-_:b8
-    ingen:tail <rt_neural_generic/OUT> ;
-    ingen:head <cabsim_IR_loader/in> .
-
-_:b9
+_:b5
     ingen:tail <_echo_stereo/out> ;
     ingen:head <playback_1> .
 
-_:b10
+_:b6
     ingen:tail <cabsim_IR_loader/out> ;
     ingen:head <PlateX2/inl> .
 
-_:b11
+_:b7
     ingen:tail <capture_2> ;
     ingen:head <gate/input> .
 
-_:b12
+_:b8
     ingen:tail <Click/out> ;
     ingen:head <playback_1> .
 
-_:b13
-    ingen:tail <_slowgear_/out> ;
-    ingen:head <wolf_shaper/lv2_audio_in_1> .
-
-_:b14
+_:b9
     ingen:tail <_echo_stereo/out1> ;
     ingen:head <playback_2> .
 
+_:b10
+    ingen:tail <gate/output> ;
+    ingen:head <ts9sim/in> .
+
+_:b11
+    ingen:tail <ts9sim/out> ;
+    ingen:head <splineDrive/in> .
+
+_:b12
+    ingen:tail <splineDrive/out> ;
+    ingen:head <rt_neural_generic/IN> .
+
+_:b13
+    ingen:tail <rt_neural_generic/OUT> ;
+    ingen:head <alaw/input> .
+
+_:b14
+    ingen:tail <alaw/output> ;
+    ingen:head <cabsim_IR_loader/in> .
+
 <rt_neural_generic>
-    ingen:canvasX 1150.0 ;
-    ingen:canvasY 959.0 ;
+    ingen:canvasX 1531.1 ;
+    ingen:canvasY 246.2 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -113,7 +113,7 @@ _:b14
         lv2:InputPort .
 
 <rt_neural_generic/PREGAIN>
-    ingen:value 1.486607 ;
+    ingen:value -1.777778 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -206,153 +206,6 @@ _:b14
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<splineDrive>
-    ingen:canvasX 690.0 ;
-    ingen:canvasY 149.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <splineDrive/in> ,
-             <splineDrive/out> ,
-             <splineDrive/gain> ,
-             <splineDrive/preserveDynamics> ,
-             <splineDrive/:bypass> ;
-    lv2:prototype <http://lv2plug.in/plugins/splineDrive> ;
-    pedal:instanceNumber 35 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<splineDrive/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<splineDrive/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<splineDrive/gain>
-    ingen:value 1.303348 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<splineDrive/preserveDynamics>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<splineDrive/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper>
-    ingen:canvasX 1236.0 ;
-    ingen:canvasY 90.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 2 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <wolf_shaper/lv2_audio_in_1> ,
-             <wolf_shaper/lv2_audio_in_2> ,
-             <wolf_shaper/lv2_audio_out_1> ,
-             <wolf_shaper/lv2_audio_out_2> ,
-             <wolf_shaper/pregain> ,
-             <wolf_shaper/wet> ,
-             <wolf_shaper/postgain> ,
-             <wolf_shaper/removedc> ,
-             <wolf_shaper/oversample> ,
-             <wolf_shaper/bipolarmode> ,
-             <wolf_shaper/warptype> ,
-             <wolf_shaper/warpamount> ,
-             <wolf_shaper/vwarptype> ,
-             <wolf_shaper/vwarpamount> ,
-             <wolf_shaper/out> ,
-             <wolf_shaper/:bypass> ;
-    lv2:prototype <https://github.com/pdesaulniers/wolf-shaper> ;
-    pedal:instanceNumber 55 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<wolf_shaper/lv2_audio_in_1>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<wolf_shaper/lv2_audio_in_2>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<wolf_shaper/lv2_audio_in_1>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<wolf_shaper/lv2_audio_in_2>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<wolf_shaper/pregain>
-    ingen:value 2.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/wet>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/postgain>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/removedc>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/oversample>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/bipolarmode>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/warptype>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/warpamount>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/vwarptype>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/vwarpamount>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<wolf_shaper/out>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<wolf_shaper/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
 <PlateX2>
     ingen:canvasX 2932.3 ;
     ingen:canvasY 606.4 ;
@@ -393,22 +246,22 @@ _:b14
         lv2:OutputPort .
 
 <PlateX2/bandwidth>
-    ingen:value 0.000000 ;
+    ingen:value 0.177455 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <PlateX2/tail>
-    ingen:value 0.217634 ;
+    ingen:value 0.085938 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <PlateX2/damping>
-    ingen:value 0.198661 ;
+    ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <PlateX2/blend>
-    ingen:value 0.258371 ;
+    ingen:value 0.277344 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -504,57 +357,9 @@ _:b14
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_slowgear_>
-    ingen:canvasX 496.0 ;
-    ingen:canvasY 830.0 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 34 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <_slowgear_/in> ,
-             <_slowgear_/out> ,
-             <_slowgear_/DOWNTIME> ,
-             <_slowgear_/TRESHOLD> ,
-             <_slowgear_/UPTIME> ,
-             <_slowgear_/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_slowgear_#_slowgear_> ;
-    pedal:instanceNumber 52 ;
-    pedal:preset <file:///usr/lib/lv2/gx_slowgear.lv2/default-preset> ;
-    a ingen:Block .
-
-<_slowgear_/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<_slowgear_/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<_slowgear_/DOWNTIME>
-    ingen:value 187.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_slowgear_/TRESHOLD>
-    ingen:value 2.237723 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_slowgear_/UPTIME>
-    ingen:value 397.879456 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_slowgear_/:bypass>
-    ingen:value 1 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
 <cabsim_IR_loader>
-    ingen:canvasX 2353.0 ;
-    ingen:canvasY 663.0 ;
+    ingen:canvasX 2133.0 ;
+    ingen:canvasY 761.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -579,7 +384,7 @@ _:b14
         lv2:OutputPort .
 
 <cabsim_IR_loader/Gain>
-    ingen:value -2.109375 ;
+    ingen:value -9.857143 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -655,8 +460,8 @@ _:b14
         lv2:InputPort .
 
 <Click>
-    ingen:canvasX 2004.0 ;
-    ingen:canvasY 392.0 ;
+    ingen:canvasX 2686.2 ;
+    ingen:canvasY 81.5 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 24 ;
@@ -696,6 +501,126 @@ _:b14
 
 <Click/:bypass>
     ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<ts9sim>
+    ingen:canvasX 658.8 ;
+    ingen:canvasY 220.6 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 3 ;
+    lv2:minorVersion 28 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <ts9sim/in> ,
+             <ts9sim/out> ,
+             <ts9sim/fslider0_> ,
+             <ts9sim/fslider1_> ,
+             <ts9sim/fslider2_> ,
+             <ts9sim/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim> ;
+    pedal:instanceNumber 56 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<ts9sim/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<ts9sim/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<ts9sim/fslider0_>
+    ingen:value -8.415179 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<ts9sim/fslider1_>
+    ingen:value 690.122768 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<ts9sim/fslider2_>
+    ingen:value 0.069196 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<ts9sim/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive>
+    ingen:canvasX 1111.0 ;
+    ingen:canvasY 227.9 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <splineDrive/in> ,
+             <splineDrive/out> ,
+             <splineDrive/gain> ,
+             <splineDrive/preserveDynamics> ,
+             <splineDrive/:bypass> ;
+    lv2:prototype <http://lv2plug.in/plugins/splineDrive> ;
+    pedal:instanceNumber 35 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<splineDrive/gain>
+    ingen:value 1.163979 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/preserveDynamics>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<alaw>
+    ingen:canvasX 1528.5 ;
+    ingen:canvasY 884.2 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <alaw/input> ,
+             <alaw/output> ,
+             <alaw/:bypass> ;
+    lv2:prototype <http://plugin.org.uk/swh-plugins/alaw> ;
+    pedal:instanceNumber 57 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<alaw/input>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<alaw/input>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<alaw/:bypass>
+    ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -952,7 +877,7 @@ _:b14
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 89 ;
+    pedal:version 91 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -969,14 +894,14 @@ _:b14
               _:b13 ,
               _:b14 ;
     ingen:block <rt_neural_generic> ,
-                <splineDrive> ,
-                <wolf_shaper> ,
                 <PlateX2> ,
                 <_echo_stereo> ,
-                <_slowgear_> ,
                 <cabsim_IR_loader> ,
                 <gate> ,
-                <Click> ;
+                <Click> ,
+                <ts9sim> ,
+                <splineDrive> ,
+                <alaw> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
