@@ -291,6 +291,12 @@
                         "preserveDynamics": 1.0
                     },
                     "preset": ""
+                },
+                "alaw": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {},
+                    "preset": ""
                 }
             }
         }

@@ -877,7 +877,7 @@ _:b14
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 91 ;
+    pedal:version 92 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
