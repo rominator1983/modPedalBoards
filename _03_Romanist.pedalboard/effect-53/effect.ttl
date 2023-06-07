@@ -8,8 +8,8 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
+	lv2:appliesTo <http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic> ;
 	state:state [
-		<http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir> <V2-TBAC65-d-MD421-A1.wav>
+		<http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json> <AMP%20Orange%20Dirty.json>
 	] .
 

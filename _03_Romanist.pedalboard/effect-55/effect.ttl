@@ -8,8 +8,8 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
+	lv2:appliesTo <https://github.com/pdesaulniers/wolf-shaper> ;
 	state:state [
-		<http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir> <V2-TBAC65-d-MD421-A1.wav>
+		<https://github.com/pdesaulniers/wolf-shaper#graph> "0x0p+0,0x0p+0,0x1.1p+3,0;0x1.aacf62p-5,0x1.5a95aap-4,-0x1.a8p+3,0;0x1.0226bap-2,0x1.a95a96p-1,-0x1.22p+5,0;0x1.dcb826p-2,0x1.405406p-3,-0x1p+0,0;0x1p+0,0x1p+0,0x0p+0,0;"
 	] .
 
