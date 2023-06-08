@@ -1,0 +1,15 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/pdesaulniers/wolf-shaper> ;
+	state:state [
+		<https://github.com/pdesaulniers/wolf-shaper#graph> "0x0p+0,0x0p+0,-0x1.56p+6,0;0x1.b89402p-7,0x1.501502p-8,-0x1.13p+6,3;0x1.f84166p-2,0x1.b67b68p-1,-0x1.48p+4,3;0x1.1bf766p-1,0x1.777778p-2,-0x1.a8p+3,2;0x1.5d5d5ep-1,0x1.56a56ap-1,0x1.6p+2,0;0x1p+0,0x1p+0,0x0p+0,0;"
+	] .
+

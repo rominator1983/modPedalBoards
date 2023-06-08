@@ -8,11 +8,11 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <capture_2> ;
-    ingen:head <splineDrive/in> .
+    ingen:tail <Freaktail/out0> ;
+    ingen:head <playback_1> .
 
 _:b2
-    ingen:tail <_supersonic_/out> ;
+    ingen:tail <neural_amp_modeler_lv2/output> ;
     ingen:head <cabsim_IR_loader/in> .
 
 _:b3
@@ -20,156 +20,138 @@ _:b3
     ingen:head <_bajatubedriver_/in> .
 
 _:b4
-    ingen:tail <cabsim_IR_loader/out> ;
-    ingen:head <Freaktail/in0> .
-
-_:b5
-    ingen:tail <cabsim_IR_loader/out> ;
-    ingen:head <Freaktail/in1> .
-
-_:b6
-    ingen:tail <_voxbass_/out> ;
-    ingen:head <_supersonic_/in> .
-
-_:b7
-    ingen:tail <Freaktail/out0> ;
-    ingen:head <playback_2> .
-
-_:b8
-    ingen:tail <molot_lite_mono_lv2/AUDIO_OUT_1> ;
-    ingen:head <_voxbass_/in> .
-
-_:b9
-    ingen:tail <Freaktail/out0> ;
-    ingen:head <playback_1> .
-
-_:b10
     ingen:tail <_bajatubedriver_/out> ;
     ingen:head <molot_lite_mono_lv2/AUDIO_IN_1> .
 
-<_supersonic_>
-    ingen:canvasX 1137.0 ;
-    ingen:canvasY 750.0 ;
+_:b5
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <Freaktail/in0> .
+
+_:b6
+    ingen:tail <molot_lite_mono_lv2/AUDIO_OUT_1> ;
+    ingen:head <neural_amp_modeler_lv2/input> .
+
+_:b7
+    ingen:tail <capture_2> ;
+    ingen:head <splineDrive/in> .
+
+_:b8
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <Freaktail/in1> .
+
+_:b9
+    ingen:tail <Freaktail/out0> ;
+    ingen:head <playback_2> .
+
+<Freaktail>
+    ingen:canvasX 2970.0 ;
+    ingen:canvasY 689.0 ;
     ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <Freaktail/in0> ,
+             <Freaktail/in1> ,
+             <Freaktail/out0> ,
+             <Freaktail/out1> ,
+             <Freaktail/Decay> ,
+             <Freaktail/Roomsize> ,
+             <Freaktail/Tail_level> ,
+             <Freaktail/:bypass> ;
+    lv2:prototype <http://faust-lv2.googlecode.com/Freaktail> ;
+    pedal:instanceNumber 41 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<Freaktail/in0>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Freaktail/in1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Freaktail/in0>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Freaktail/in1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Freaktail/Decay>
+    ingen:value 0.644420 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/Roomsize>
+    ingen:value 2.298940 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/Tail_level>
+    ingen:value 0.303404 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bajatubedriver_>
+    ingen:canvasX 702.2 ;
+    ingen:canvasY 236.3 ;
+    ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 35 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <_supersonic_/in> ,
-             <_supersonic_/out> ,
-             <_supersonic_/BYPASS> ,
-             <_supersonic_/GAIN> ,
-             <_supersonic_/BASS> ,
-             <_supersonic_/TREBLE> ,
-             <_supersonic_/VOLUME> ,
-             <_supersonic_/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_supersonic_#_supersonic_> ;
-    pedal:instanceNumber 16 ;
+    lv2:port <_bajatubedriver_/in> ,
+             <_bajatubedriver_/out> ,
+             <_bajatubedriver_/BYPASS> ,
+             <_bajatubedriver_/DRIVE> ,
+             <_bajatubedriver_/TONE> ,
+             <_bajatubedriver_/VOLUME> ,
+             <_bajatubedriver_/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_bajatubedriver_#_bajatubedriver_> ;
+    pedal:instanceNumber 31 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<_supersonic_/in>
+<_bajatubedriver_/in>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<_supersonic_/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<_supersonic_/BYPASS>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_supersonic_/GAIN>
-    ingen:value 0.135266 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_supersonic_/BASS>
-    ingen:value 0.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_supersonic_/TREBLE>
-    ingen:value 0.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_supersonic_/VOLUME>
-    ingen:value 0.229469 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_supersonic_/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_voxbass_>
-    ingen:canvasX 1955.0 ;
-    ingen:canvasY 364.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 34 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <_voxbass_/in> ,
-             <_voxbass_/out> ,
-             <_voxbass_/BYPASS> ,
-             <_voxbass_/BASS> ,
-             <_voxbass_/CAB> ,
-             <_voxbass_/MID> ,
-             <_voxbass_/TREBLE> ,
-             <_voxbass_/VOLUME> ,
-             <_voxbass_/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_voxbass_#_voxbass_> ;
-    pedal:instanceNumber 26 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<_voxbass_/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<_voxbass_/in>
+<_bajatubedriver_/in>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<_voxbass_/BYPASS>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_voxbass_/BASS>
-    ingen:value 0.605469 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_voxbass_/CAB>
+<_bajatubedriver_/BYPASS>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_voxbass_/MID>
-    ingen:value 0.515625 ;
+<_bajatubedriver_/DRIVE>
+    ingen:value 0.483092 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_voxbass_/TREBLE>
-    ingen:value 0.200000 ;
+<_bajatubedriver_/TONE>
+    ingen:value 0.432367 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_voxbass_/VOLUME>
-    ingen:value 0.564174 ;
+<_bajatubedriver_/VOLUME>
+    ingen:value 0.340000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_voxbass_/:bypass>
-    ingen:value 0 ;
+<_bajatubedriver_/:bypass>
+    ingen:value 1 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -200,7 +182,7 @@ _:b10
         lv2:OutputPort .
 
 <cabsim_IR_loader/Gain>
-    ingen:value -6.679688 ;
+    ingen:value -2.862723 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -212,7 +194,7 @@ _:b10
 <molot_lite_mono_lv2>
     ingen:canvasX 1394.0 ;
     ingen:canvasY 267.0 ;
-    ingen:enabled true ;
+    ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 1 ;
     lv2:minorVersion 0 ;
@@ -295,119 +277,49 @@ _:b10
         lv2:InputPort .
 
 <molot_lite_mono_lv2/:bypass>
-    ingen:value 0 ;
+    ingen:value 1 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Freaktail>
-    ingen:canvasX 2970.0 ;
-    ingen:canvasY 689.0 ;
+<neural_amp_modeler_lv2>
+    ingen:canvasX 1809.0 ;
+    ingen:canvasY 218.2 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 1 ;
+    lv2:microVersion 1 ;
+    lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <Freaktail/in0> ,
-             <Freaktail/in1> ,
-             <Freaktail/out0> ,
-             <Freaktail/out1> ,
-             <Freaktail/Decay> ,
-             <Freaktail/Roomsize> ,
-             <Freaktail/Tail_level> ,
-             <Freaktail/:bypass> ;
-    lv2:prototype <http://faust-lv2.googlecode.com/Freaktail> ;
-    pedal:instanceNumber 41 ;
+    lv2:port <neural_amp_modeler_lv2/input> ,
+             <neural_amp_modeler_lv2/output> ,
+             <neural_amp_modeler_lv2/input_level> ,
+             <neural_amp_modeler_lv2/output_level> ,
+             <neural_amp_modeler_lv2/:bypass> ;
+    lv2:prototype <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
+    pedal:instanceNumber 49 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<Freaktail/in0>
+<neural_amp_modeler_lv2/input>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<Freaktail/in1>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<Freaktail/in0>
+<neural_amp_modeler_lv2/input>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<Freaktail/in1>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<Freaktail/Decay>
-    ingen:value 0.644420 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/Roomsize>
-    ingen:value 2.298940 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/Tail_level>
-    ingen:value 0.220536 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bajatubedriver_>
-    ingen:canvasX 702.2 ;
-    ingen:canvasY 236.3 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 35 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <_bajatubedriver_/in> ,
-             <_bajatubedriver_/out> ,
-             <_bajatubedriver_/BYPASS> ,
-             <_bajatubedriver_/DRIVE> ,
-             <_bajatubedriver_/TONE> ,
-             <_bajatubedriver_/VOLUME> ,
-             <_bajatubedriver_/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_bajatubedriver_#_bajatubedriver_> ;
-    pedal:instanceNumber 31 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<_bajatubedriver_/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<_bajatubedriver_/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<_bajatubedriver_/BYPASS>
+<neural_amp_modeler_lv2/input_level>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_bajatubedriver_/DRIVE>
-    ingen:value 0.483092 ;
+<neural_amp_modeler_lv2/output_level>
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_bajatubedriver_/TONE>
-    ingen:value 0.432367 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bajatubedriver_/VOLUME>
-    ingen:value 0.340000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bajatubedriver_/:bypass>
-    ingen:value 1 ;
+<neural_amp_modeler_lv2/:bypass>
+    ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -619,13 +531,13 @@ _:b10
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<midi_capture_4>
+<midi_capture_3>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 21 ;
     lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_4" ;
+    lv2:symbol "midi_capture_3" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -641,13 +553,13 @@ _:b10
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_3>
+<midi_capture_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 23 ;
     lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_3" ;
+    lv2:symbol "midi_capture_4" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -706,7 +618,7 @@ _:b10
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 83 ;
+    pedal:version 86 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -716,14 +628,12 @@ _:b10
               _:b6 ,
               _:b7 ,
               _:b8 ,
-              _:b9 ,
-              _:b10 ;
-    ingen:block <_supersonic_> ,
-                <_voxbass_> ,
+              _:b9 ;
+    ingen:block <Freaktail> ,
+                <_bajatubedriver_> ,
                 <cabsim_IR_loader> ,
                 <molot_lite_mono_lv2> ,
-                <Freaktail> ,
-                <_bajatubedriver_> ,
+                <neural_amp_modeler_lv2> ,
                 <splineDrive> ;
     lv2:port <:bpb> ,
              <:bpm> ,
@@ -732,9 +642,9 @@ _:b10
              <midi_loopback> ,
              <control_in> ,
              <control_out> ,
-             <midi_capture_4> ,
-             <midi_capture_2> ,
              <midi_capture_3> ,
+             <midi_capture_2> ,
+             <midi_capture_4> ,
              <midi_playback_4> ,
              <midi_playback_2> ,
              <midi_playback_4> ,

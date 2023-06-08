@@ -1,0 +1,139 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "_sd1sim_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "DRIVE": 0.7310267857142858,
+                        "LEVEL": -9.433035714285715,
+                        "TONE": 400.0
+                    },
+                    "preset": ""
+                },
+                "rt_neural_generic": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json": [
+                            "/home/roman/mod/user-files/Aida DSP Models/mod community/BLD-1_LSTM-16.json",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "ANTIALIASING": 66.21600341796875,
+                        "PREGAIN": -3.022222222222222,
+                        "NETBYPASS": 0.0,
+                        "PARAM1": 0.0,
+                        "PARAM2": 0.0,
+                        "EQBYPASS": 0.0,
+                        "EQPOS": 0.0,
+                        "BASS": 0.0,
+                        "BFREQ": 305.0,
+                        "MID": 0.0,
+                        "MFREQ": 750.0,
+                        "MIDQ": 0.7070000171661377,
+                        "MTYPE": 0.0,
+                        "TREBLE": 0.0,
+                        "TFREQ": 2000.0,
+                        "DEPTH": 0.0,
+                        "PRESENCE": 0.0,
+                        "MASTER": 11.722222222222221
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/home/roman/mod/user-files/Speaker Cabinets IRs/Shift_Line_SUNN_200s_IR_Pack/09_SUNN200s_cab75_L19-center_e906.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": -2.008928571428555
+                    },
+                    "preset": ""
+                },
+                "chorusflanger": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "Frequency": 1.0546875,
+                        "LRPhaseShift": 90.0,
+                        "Depth": 66.796875,
+                        "Delay": 25.0,
+                        "Contour": 100.0,
+                        "DryLevel": -3.0,
+                        "WetLevel": -7.31584821428568
+                    },
+                    "preset": ""
+                },
+                "modulay": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 51.316964285714285,
+                        "mix": 75.0,
+                        "rate": 2.0,
+                        "depth": 1.0,
+                        "time": 500.0,
+                        "morph": 50.0,
+                        "tone": 3000.0
+                    },
+                    "preset": ""
+                },
+                "modulay_1": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 39.28571428571429,
+                        "mix": 75.0,
+                        "rate": 2.0,
+                        "depth": 1.0,
+                        "time": 821.1718749999997,
+                        "morph": 50.0,
+                        "tone": 3000.0
+                    },
+                    "preset": ""
+                },
+                "PlateX2": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "bandwidth": 0.8660714285714287,
+                        "tail": 0.45535714285714285,
+                        "damping": 0.13671875000000003,
+                        "blend": 0.33984375
+                    },
+                    "preset": ""
+                },
+                "wolf_shaper": {
+                    "bypassed": false,
+                    "parameters": {
+                        "https://github.com/pdesaulniers/wolf-shaper#graph": [
+                            "0x0p+0,0x0p+0,-0x1.56p+6,0;0x1.b89402p-7,0x1.501502p-8,-0x1.13p+6,3;0x1.f84166p-2,0x1.b67b68p-1,-0x1.48p+4,3;0x1.1bf766p-1,0x1.777778p-2,-0x1.a8p+3,2;0x1.5d5d5ep-1,0x1.56a56ap-1,0x1.6p+2,0;0x1p+0,0x1p+0,0x0p+0,0;",
+                            "s"
+                        ]
+                    },
+                    "ports": {
+                        "pregain": 2.0,
+                        "wet": 1.0,
+                        "postgain": 1.0,
+                        "removedc": 1.0,
+                        "oversample": 0.0,
+                        "bipolarmode": 0.0,
+                        "warptype": 0.0,
+                        "warpamount": 0.5199999809265137,
+                        "vwarptype": 0.0,
+                        "vwarpamount": 0.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

@@ -297,6 +297,20 @@
                         "DRY_WET": 0.0
                     },
                     "preset": "http://github.com/bernhardrusch/molot-lite-mono-lv2:preset:sologuitar"
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Orange Rockerverb MK3 v2 (Canov+Arnold)/Orange Rockerverb MK3 - Clean - Canov+Arnold.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0
+                    },
+                    "preset": ""
                 }
             }
         }
