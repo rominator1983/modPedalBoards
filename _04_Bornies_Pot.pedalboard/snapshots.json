@@ -276,6 +276,20 @@
                         "MASTER": 1.0881696428571495
                     },
                     "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Orange Rockerverb MK3 v2 (Canov+Arnold)/Orange Rockerverb MK3 - Higain G5 + Fortin TS808 - Canov+Arnold.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0
+                    },
+                    "preset": ""
                 }
             }
         }

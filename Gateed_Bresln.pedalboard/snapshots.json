@@ -255,6 +255,20 @@
                         "damping": 0.03571428571428541
                     },
                     "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Marshall JTM45-20230608T202341Z-001/Marshall JTM45/JTM45 BLEND Treb10 Norm10/JTM45 T10N10.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 5.848214285714285,
+                        "output_level": 0.0
+                    },
+                    "preset": ""
                 }
             }
         }

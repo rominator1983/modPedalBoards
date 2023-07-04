@@ -8,40 +8,40 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <Freaktail/out0> ;
-    ingen:head <playback_1> .
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <Freaktail/in1> .
 
 _:b2
-    ingen:tail <neural_amp_modeler_lv2/output> ;
-    ingen:head <cabsim_IR_loader/in> .
-
-_:b3
-    ingen:tail <splineDrive/out> ;
-    ingen:head <_bajatubedriver_/in> .
-
-_:b4
     ingen:tail <_bajatubedriver_/out> ;
     ingen:head <molot_lite_mono_lv2/AUDIO_IN_1> .
 
-_:b5
+_:b3
     ingen:tail <cabsim_IR_loader/out> ;
     ingen:head <Freaktail/in0> .
+
+_:b4
+    ingen:tail <splineDrive/out> ;
+    ingen:head <_bajatubedriver_/in> .
+
+_:b5
+    ingen:tail <capture_2> ;
+    ingen:head <splineDrive/in> .
 
 _:b6
     ingen:tail <molot_lite_mono_lv2/AUDIO_OUT_1> ;
     ingen:head <neural_amp_modeler_lv2/input> .
 
 _:b7
-    ingen:tail <capture_2> ;
-    ingen:head <splineDrive/in> .
+    ingen:tail <Freaktail/out0> ;
+    ingen:head <playback_2> .
 
 _:b8
-    ingen:tail <cabsim_IR_loader/out> ;
-    ingen:head <Freaktail/in1> .
+    ingen:tail <neural_amp_modeler_lv2/output> ;
+    ingen:head <cabsim_IR_loader/in> .
 
 _:b9
     ingen:tail <Freaktail/out0> ;
-    ingen:head <playback_2> .
+    ingen:head <playback_1> .
 
 <Freaktail>
     ingen:canvasX 2970.0 ;
@@ -435,24 +435,8 @@ _:b9
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<capture_FL>
-    lv2:index 9 ;
-    lv2:name "Capture Fl" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FL" ;
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<capture_FR>
-    lv2:index 10 ;
-    lv2:name "Capture Fr" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FR" ;
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
 <playback_1>
-    lv2:index 11 ;
+    lv2:index 9 ;
     lv2:name "Playback 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "playback_1" ;
@@ -460,7 +444,7 @@ _:b9
         lv2:OutputPort .
 
 <playback_2>
-    lv2:index 12 ;
+    lv2:index 10 ;
     lv2:name "Playback 2" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "playback_2" ;
@@ -468,7 +452,7 @@ _:b9
         lv2:OutputPort .
 
 <playback_FL>
-    lv2:index 13 ;
+    lv2:index 11 ;
     lv2:name "Playback Fl" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "playback_FL" ;
@@ -476,76 +460,17 @@ _:b9
         lv2:OutputPort .
 
 <playback_FR>
-    lv2:index 14 ;
+    lv2:index 12 ;
     lv2:name "Playback Fr" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "playback_FR" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
-
-<playback_FL>
-    lv2:index 15 ;
-    lv2:name "Playback Fl" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<playback_FR>
-    lv2:index 16 ;
-    lv2:name "Playback Fr" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<playback_FL>
-    lv2:index 17 ;
-    lv2:name "Playback Fl" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<playback_FR>
-    lv2:index 18 ;
-    lv2:name "Playback Fr" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<playback_FL>
-    lv2:index 19 ;
-    lv2:name "Playback Fl" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<playback_FR>
-    lv2:index 20 ;
-    lv2:name "Playback Fr" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR" ;
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<midi_capture_3>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 21 ;
-    lv2:name "LPD8 MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_3" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
 
 <midi_capture_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 22 ;
+    lv2:index 13 ;
     lv2:name "Steinberg UR22mkII MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_2" ;
@@ -553,10 +478,21 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
+<midi_capture_3>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 14 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_3" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
 <midi_capture_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 23 ;
+    lv2:index 15 ;
     lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_4" ;
@@ -564,21 +500,10 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_playback_4>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 24 ;
-    lv2:name "LPD8 MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_4" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:OutputPort .
-
 <midi_playback_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 25 ;
+    lv2:index 16 ;
     lv2:name "Steinberg UR22mkII MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_2" ;
@@ -589,7 +514,18 @@ _:b9
 <midi_playback_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 26 ;
+    lv2:index 17 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_4" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_playback_4>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 18 ;
     lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_4" ;
@@ -599,13 +535,13 @@ _:b9
 
 <midi_separated_mode>
     ingen:value 1 ;
-    lv2:index 27 ;
+    lv2:index 19 ;
     a atom:AtomPort ,
         lv2:InputPort .
 
 <midi_loopback>
     ingen:value 0 ;
-    lv2:index 28 ;
+    lv2:index 20 ;
     a atom:AtomPort ,
         lv2:InputPort .
 
@@ -618,7 +554,7 @@ _:b9
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 86 ;
+    pedal:version 89 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -642,26 +578,18 @@ _:b9
              <midi_loopback> ,
              <control_in> ,
              <control_out> ,
-             <midi_capture_3> ,
              <midi_capture_2> ,
+             <midi_capture_3> ,
              <midi_capture_4> ,
-             <midi_playback_4> ,
              <midi_playback_2> ,
+             <midi_playback_4> ,
              <midi_playback_4> ,
              <capture_1> ,
              <capture_2> ,
              <capture_FL> ,
              <capture_FR> ,
-             <capture_FL> ,
-             <capture_FR> ,
              <playback_1> ,
              <playback_2> ,
-             <playback_FL> ,
-             <playback_FR> ,
-             <playback_FL> ,
-             <playback_FR> ,
-             <playback_FL> ,
-             <playback_FR> ,
              <playback_FL> ,
              <playback_FR> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;

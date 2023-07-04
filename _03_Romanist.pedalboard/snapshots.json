@@ -394,6 +394,20 @@
                     "parameters": {},
                     "ports": {},
                     "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Orange Rockerverb MK3 v2 (Canov+Arnold)/Orange Rockerverb MK3 - Clean - Canov+Arnold.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": -0.8616780045351504,
+                        "output_level": 2.7120181405895636
+                    },
+                    "preset": ""
                 }
             }
         }

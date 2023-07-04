@@ -327,6 +327,28 @@
                         "MASTER": -4.222222222222221
                     },
                     "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Orange Rockerverb MK3 v2 (Canov+Arnold)/Orange Rockerverb MK3 - Higain G6 + TI Boost - Canov+Arnold.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": -19.2925170068027,
+                        "output_level": -6.811791383219932
+                    },
+                    "preset": ""
+                },
+                "modmeter_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "reset": 1.0
+                    },
+                    "preset": ""
                 }
             }
         }

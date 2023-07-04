@@ -1,0 +1,83 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "mod": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "mode": 0.0,
+                        "tuning": 440.0,
+                        "thresholdRMS": -75.0,
+                        "thresholdPostFilter": -45.0,
+                        "thresholdFFT": -40.0,
+                        "thresholdOverride": 20.0,
+                        "thresholdFundamental": 5.0,
+                        "thresholdOctave": -30.0,
+                        "thresholdOvertones": -15.0
+                    },
+                    "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/BossLSTM-1x24.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 20.0,
+                        "output_level": 0.0
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/home/roman/mod/user-files/Speaker Cabinets IRs/Angie selection/V2-Angie-d-D202-A1.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": 0.0
+                    },
+                    "preset": ""
+                },
+                "rt_neural_generic": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json": [
+                            "/home/roman/mod/user-files/Aida DSP Models/mod community/Barber DD.json",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "ANTIALIASING": 66.21600341796875,
+                        "PREGAIN": 0.0,
+                        "NETBYPASS": 0.0,
+                        "PARAM1": 0.0,
+                        "PARAM2": 0.0,
+                        "EQBYPASS": 0.0,
+                        "EQPOS": 0.0,
+                        "BASS": 0.0,
+                        "BFREQ": 305.0,
+                        "MID": 0.0,
+                        "MFREQ": 750.0,
+                        "MIDQ": 0.7070000171661377,
+                        "MTYPE": 0.0,
+                        "TREBLE": 0.0,
+                        "TFREQ": 2000.0,
+                        "DEPTH": 0.0,
+                        "PRESENCE": 0.0,
+                        "MASTER": 0.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

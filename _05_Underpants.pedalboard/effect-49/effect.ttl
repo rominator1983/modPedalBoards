@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
 	state:state [
-		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Orange%20Rockerverb%20MK3%20-%20Crunch%20G5%20-%20Canov+Arnold.nam>
+		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Rockerverb-Crunch.nam>
 	] .
 

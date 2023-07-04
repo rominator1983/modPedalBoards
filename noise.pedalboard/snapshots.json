@@ -132,6 +132,21 @@
                         "vwarpamount": 0.0
                     },
                     "preset": ""
+                },
+                "CfgMono": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://gareus.org/oss/lv2/zeroconvolv#ir": [
+                            "/home/roman/mod/user-files/Reverb IRs/IR_AKG_BX25_1,5s.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "dry": -10.101449275362306,
+                        "wet": -32.739130434782595,
+                        "enable": 1.0
+                    },
+                    "preset": ""
                 }
             }
         }

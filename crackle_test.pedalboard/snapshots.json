@@ -1,0 +1,19 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "Sin": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "freq": 440.0,
+                        "volume": 0.5
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

@@ -378,6 +378,35 @@
                         "vwarpamount": 0.0
                     },
                     "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Vox AC15/Vox AC15CH Crunch Normal.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 8.549107142857146,
+                        "output_level": 0.0
+                    },
+                    "preset": ""
+                },
+                "Expander": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "THRESHOLD": -71.0,
+                        "SHAPE": 8.0,
+                        "ATTACK": 17.0,
+                        "RELEASE": 70.0,
+                        "LPF": 26000.0,
+                        "HPF": 20.0,
+                        "OUTPUT": 1.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#Expander:preset:noise_gate"
                 }
             }
         }
