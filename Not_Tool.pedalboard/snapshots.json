@@ -1,0 +1,64 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Diezel VH4 Collection/VH4 - 2nd channel + Mudkiller.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 3.4375,
+                        "output_level": -2.6757369614512427
+                    },
+                    "preset": ""
+                },
+                "neural_amp_modeler_lv2_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/roman/mod/user-files/NAM Models/Mesa Boogie JP-2C Pack!/JP2C Capture 1 CH3 G8 T7 M4 B2 P4 - Emil Rohbe.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": -11.763392857142863,
+                        "output_level": 7.120535714285715
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/home/roman/mod/user-files/Speaker Cabinets IRs/V2-Teaserpack 44100Hz-24bit 170ms/V2-JCM1980-d-e906-B2.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": 0.0
+                    },
+                    "preset": ""
+                },
+                "cabsim_IR_loader_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://moddevices.com/plugins/mod-devel/cabsim-IR-loader#ir": [
+                            "/home/roman/mod/user-files/Speaker Cabinets IRs/Shift_Line_SUNN_200s_IR_Pack/10_SUNN200s_cab100_e906-center_L19.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "Gain": 0.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}

@@ -12,173 +12,64 @@ _:b1
     ingen:head <splineDrive/in> .
 
 _:b2
-    ingen:tail <_bajatubedriver_/out> ;
-    ingen:head <neural_amp_modeler_lv2/input> .
+    ingen:tail <bolliedelay/out_l> ;
+    ingen:head <Freaktail/in0> .
 
 _:b3
-    ingen:tail <splineDrive/out> ;
-    ingen:head <_bajatubedriver_/in> .
+    ingen:tail <Expander/OUTPUT_L> ;
+    ingen:head <Capo/In> .
 
 _:b4
     ingen:tail <Freaktail/out1> ;
     ingen:head <stereo_record_mini/in1> .
 
 _:b5
+    ingen:tail <_bajatubedriver_/out> ;
+    ingen:head <neural_amp_modeler_lv2/input> .
+
+_:b6
+    ingen:tail <splineDrive/out> ;
+    ingen:head <_bajatubedriver_/in> .
+
+_:b7
+    ingen:tail <Expander/OUTPUT_L> ;
+    ingen:head <rectifyingOctave/in> .
+
+_:b8
     ingen:tail <Freaktail/out1> ;
     ingen:head <playback_2> .
 
-_:b6
-    ingen:tail <Freaktail/out0> ;
-    ingen:head <stereo_record_mini/in> .
-
-_:b7
-    ingen:tail <cabsim_IR_loader/out> ;
-    ingen:head <bolliedelay/in_r> .
-
-_:b8
-    ingen:tail <bolliedelay/out_l> ;
-    ingen:head <Freaktail/in0> .
-
 _:b9
-    ingen:tail <Freaktail/out0> ;
-    ingen:head <playback_1> .
-
-_:b10
     ingen:tail <cabsim_IR_loader/out> ;
     ingen:head <bolliedelay/in_l> .
 
+_:b10
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <bolliedelay/in_r> .
+
 _:b11
-    ingen:tail <neural_amp_modeler_lv2/output> ;
-    ingen:head <cabsim_IR_loader/in> .
+    ingen:tail <Freaktail/out0> ;
+    ingen:head <stereo_record_mini/in> .
 
 _:b12
-    ingen:tail <Capo/Out> ;
-    ingen:head <splineDrive/in> .
-
-_:b13
     ingen:tail <bolliedelay/out_r> ;
     ingen:head <Freaktail/in1> .
+
+_:b13
+    ingen:tail <Capo/Out> ;
+    ingen:head <splineDrive/in> .
 
 _:b14
     ingen:tail <capture_2> ;
     ingen:head <Expander/INPUT_L> .
 
 _:b15
-    ingen:tail <Expander/OUTPUT_L> ;
-    ingen:head <rectifyingOctave/in> .
+    ingen:tail <neural_amp_modeler_lv2/output> ;
+    ingen:head <cabsim_IR_loader/in> .
 
 _:b16
-    ingen:tail <Expander/OUTPUT_L> ;
-    ingen:head <Capo/In> .
-
-<splineDrive>
-    ingen:canvasX 1189.0 ;
-    ingen:canvasY 167.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <splineDrive/in> ,
-             <splineDrive/out> ,
-             <splineDrive/gain> ,
-             <splineDrive/preserveDynamics> ,
-             <splineDrive/:bypass> ;
-    lv2:prototype <http://lv2plug.in/plugins/splineDrive> ;
-    pedal:instanceNumber 40 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<splineDrive/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<splineDrive/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<splineDrive/gain>
-    ingen:value 9.174933 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<splineDrive/preserveDynamics>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<splineDrive/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo_record_mini>
-    ingen:canvasX 3334.0 ;
-    ingen:canvasY 577.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 2 ;
-    lv2:minorVersion 2 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <stereo_record_mini/in> ,
-             <stereo_record_mini/in1> ,
-             <stereo_record_mini/out> ,
-             <stereo_record_mini/out1> ,
-             <stereo_record_mini/FORM> ,
-             <stereo_record_mini/REC> ,
-             <stereo_record_mini/CLIP> ,
-             <stereo_record_mini/LMETER> ,
-             <stereo_record_mini/RMETER> ,
-             <stereo_record_mini/:bypass> ;
-    lv2:prototype <https://github.com/brummer10/screcord#stereo_record_mini> ;
-    pedal:instanceNumber 50 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<stereo_record_mini/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<stereo_record_mini/in1>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<stereo_record_mini/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<stereo_record_mini/in1>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<stereo_record_mini/FORM>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo_record_mini/REC>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo_record_mini/CLIP>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<stereo_record_mini/LMETER>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<stereo_record_mini/RMETER>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<stereo_record_mini/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
+    ingen:tail <Freaktail/out0> ;
+    ingen:head <playback_1> .
 
 <_bajatubedriver_>
     ingen:canvasX 1551.1 ;
@@ -531,64 +422,6 @@ _:b16
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Freaktail>
-    ingen:canvasX 3015.0 ;
-    ingen:canvasY 260.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 1 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <Freaktail/in0> ,
-             <Freaktail/in1> ,
-             <Freaktail/out0> ,
-             <Freaktail/out1> ,
-             <Freaktail/Decay> ,
-             <Freaktail/Roomsize> ,
-             <Freaktail/Tail_level> ,
-             <Freaktail/:bypass> ;
-    lv2:prototype <http://faust-lv2.googlecode.com/Freaktail> ;
-    pedal:instanceNumber 47 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<Freaktail/in0>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<Freaktail/in1>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<Freaktail/in0>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<Freaktail/in1>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<Freaktail/Decay>
-    ingen:value 0.485212 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/Roomsize>
-    ingen:value 1.516468 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/Tail_level>
-    ingen:value 0.178348 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Freaktail/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
 <Expander>
     ingen:canvasX 223.0 ;
     ingen:canvasY 105.0 ;
@@ -677,6 +510,173 @@ _:b16
     a lv2:ControlPort ,
         lv2:InputPort .
 
+<Freaktail>
+    ingen:canvasX 3015.0 ;
+    ingen:canvasY 260.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <Freaktail/in0> ,
+             <Freaktail/in1> ,
+             <Freaktail/out0> ,
+             <Freaktail/out1> ,
+             <Freaktail/Decay> ,
+             <Freaktail/Roomsize> ,
+             <Freaktail/Tail_level> ,
+             <Freaktail/:bypass> ;
+    lv2:prototype <http://faust-lv2.googlecode.com/Freaktail> ;
+    pedal:instanceNumber 47 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<Freaktail/in0>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Freaktail/in1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Freaktail/in0>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Freaktail/in1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Freaktail/Decay>
+    ingen:value 0.485212 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/Roomsize>
+    ingen:value 1.516468 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/Tail_level>
+    ingen:value 0.178348 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Freaktail/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive>
+    ingen:canvasX 1189.0 ;
+    ingen:canvasY 167.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <splineDrive/in> ,
+             <splineDrive/out> ,
+             <splineDrive/gain> ,
+             <splineDrive/preserveDynamics> ,
+             <splineDrive/:bypass> ;
+    lv2:prototype <http://lv2plug.in/plugins/splineDrive> ;
+    pedal:instanceNumber 40 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<splineDrive/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<splineDrive/gain>
+    ingen:value 9.174933 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/preserveDynamics>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<splineDrive/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo_record_mini>
+    ingen:canvasX 3334.0 ;
+    ingen:canvasY 577.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 2 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <stereo_record_mini/in> ,
+             <stereo_record_mini/in1> ,
+             <stereo_record_mini/out> ,
+             <stereo_record_mini/out1> ,
+             <stereo_record_mini/FORM> ,
+             <stereo_record_mini/REC> ,
+             <stereo_record_mini/CLIP> ,
+             <stereo_record_mini/LMETER> ,
+             <stereo_record_mini/RMETER> ,
+             <stereo_record_mini/:bypass> ;
+    lv2:prototype <https://github.com/brummer10/screcord#stereo_record_mini> ;
+    pedal:instanceNumber 50 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<stereo_record_mini/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<stereo_record_mini/in1>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<stereo_record_mini/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<stereo_record_mini/in1>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<stereo_record_mini/FORM>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo_record_mini/REC>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo_record_mini/CLIP>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<stereo_record_mini/LMETER>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<stereo_record_mini/RMETER>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<stereo_record_mini/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
 <:bpb>
     ingen:value 4.000000 ;
     lv2:index 0 ;
@@ -747,35 +747,35 @@ _:b16
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<capture_FL-75>
+<capture_FL-86>
     lv2:index 9 ;
-    lv2:name "Capture Fl-75" ;
+    lv2:name "Capture Fl-86" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FL-75" ;
+    lv2:symbol "capture_FL-86" ;
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<capture_FR-76>
+<capture_FR-87>
     lv2:index 10 ;
-    lv2:name "Capture Fr-76" ;
+    lv2:name "Capture Fr-87" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FR-76" ;
+    lv2:symbol "capture_FR-87" ;
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<capture_FL-77>
+<capture_FL-88>
     lv2:index 11 ;
-    lv2:name "Capture Fl-77" ;
+    lv2:name "Capture Fl-88" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FL-77" ;
+    lv2:symbol "capture_FL-88" ;
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<capture_FR-78>
+<capture_FR-89>
     lv2:index 12 ;
-    lv2:name "Capture Fr-78" ;
+    lv2:name "Capture Fr-89" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "capture_FR-78" ;
+    lv2:symbol "capture_FR-89" ;
     a lv2:AudioPort ,
         lv2:InputPort .
 
@@ -811,85 +811,74 @@ _:b16
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FL-63>
+<playback_FL-74>
     lv2:index 17 ;
-    lv2:name "Playback Fl-63" ;
+    lv2:name "Playback Fl-74" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL-63" ;
+    lv2:symbol "playback_FL-74" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FR-65>
+<playback_FR-76>
     lv2:index 18 ;
-    lv2:name "Playback Fr-65" ;
+    lv2:name "Playback Fr-76" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR-65" ;
+    lv2:symbol "playback_FR-76" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FL-67>
+<playback_FL-78>
     lv2:index 19 ;
-    lv2:name "Playback Fl-67" ;
+    lv2:name "Playback Fl-78" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL-67" ;
+    lv2:symbol "playback_FL-78" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FR-69>
+<playback_FR-80>
     lv2:index 20 ;
-    lv2:name "Playback Fr-69" ;
+    lv2:name "Playback Fr-80" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR-69" ;
+    lv2:symbol "playback_FR-80" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FL-71>
+<playback_FL-82>
     lv2:index 21 ;
-    lv2:name "Playback Fl-71" ;
+    lv2:name "Playback Fl-82" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL-71" ;
+    lv2:symbol "playback_FL-82" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FR-73>
+<playback_FR-84>
     lv2:index 22 ;
-    lv2:name "Playback Fr-73" ;
+    lv2:name "Playback Fr-84" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR-73" ;
+    lv2:symbol "playback_FR-84" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FL-79>
+<playback_FL-90>
     lv2:index 23 ;
-    lv2:name "Playback Fl-79" ;
+    lv2:name "Playback Fl-90" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FL-79" ;
+    lv2:symbol "playback_FL-90" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<playback_FR-81>
+<playback_FR-92>
     lv2:index 24 ;
-    lv2:name "Playback Fr-81" ;
+    lv2:name "Playback Fr-92" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "playback_FR-81" ;
+    lv2:symbol "playback_FR-92" ;
     a lv2:AudioPort ,
         lv2:OutputPort .
-
-<midi_capture_4>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 25 ;
-    lv2:name "LPD8 MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_4" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
 
 <midi_capture_3>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 26 ;
+    lv2:index 25 ;
     lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_3" ;
@@ -900,10 +889,21 @@ _:b16
 <midi_capture_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 27 ;
+    lv2:index 26 ;
     lv2:name "Steinberg UR22mkII MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_2" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_capture_4>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 27 ;
+    lv2:name "LPD8 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_4" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -919,24 +919,24 @@ _:b16
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_4>
+<midi_playback_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 29 ;
-    lv2:name "LPD8 MIDI 1" ;
+    lv2:name "Steinberg UR22mkII MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_4" ;
+    lv2:symbol "midi_playback_2" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_2>
+<midi_playback_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 30 ;
-    lv2:name "Steinberg UR22mkII MIDI 1" ;
+    lv2:name "LPD8 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_2" ;
+    lv2:symbol "midi_playback_4" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
@@ -962,7 +962,7 @@ _:b16
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 101 ;
+    pedal:version 102 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -980,16 +980,16 @@ _:b16
               _:b14 ,
               _:b15 ,
               _:b16 ;
-    ingen:block <splineDrive> ,
-                <stereo_record_mini> ,
-                <_bajatubedriver_> ,
+    ingen:block <_bajatubedriver_> ,
                 <bolliedelay> ,
                 <cabsim_IR_loader> ,
                 <neural_amp_modeler_lv2> ,
                 <rectifyingOctave> ,
                 <Capo> ,
+                <Expander> ,
                 <Freaktail> ,
-                <Expander> ;
+                <splineDrive> ,
+                <stereo_record_mini> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
@@ -997,32 +997,32 @@ _:b16
              <midi_loopback> ,
              <control_in> ,
              <control_out> ,
-             <midi_capture_4> ,
              <midi_capture_3> ,
              <midi_capture_2> ,
-             <midi_playback_4> ,
+             <midi_capture_4> ,
              <midi_playback_4> ,
              <midi_playback_2> ,
+             <midi_playback_4> ,
              <capture_1> ,
              <capture_2> ,
              <capture_FL> ,
              <capture_FR> ,
-             <capture_FL-75> ,
-             <capture_FR-76> ,
-             <capture_FL-77> ,
-             <capture_FR-78> ,
+             <capture_FL-86> ,
+             <capture_FR-87> ,
+             <capture_FL-88> ,
+             <capture_FR-89> ,
              <playback_1> ,
              <playback_2> ,
              <playback_FL> ,
              <playback_FR> ,
-             <playback_FL-63> ,
-             <playback_FR-65> ,
-             <playback_FL-67> ,
-             <playback_FR-69> ,
-             <playback_FL-71> ,
-             <playback_FR-73> ,
-             <playback_FL-79> ,
-             <playback_FR-81> ;
+             <playback_FL-74> ,
+             <playback_FR-76> ,
+             <playback_FL-78> ,
+             <playback_FR-80> ,
+             <playback_FL-82> ,
+             <playback_FR-84> ,
+             <playback_FL-90> ,
+             <playback_FR-92> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
     a lv2:Plugin ,
         ingen:Graph ,

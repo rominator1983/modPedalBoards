@@ -1,0 +1,461 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix ingen: <http://drobilla.net/ns/ingen#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+@prefix pedal: <http://moddevices.com/ns/modpedal#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:b1
+    ingen:tail <capture_2> ;
+    ingen:head <neural_amp_modeler_lv2/input> .
+
+_:b2
+    ingen:tail <capture_2> ;
+    ingen:head <neural_amp_modeler_lv2_1/input> .
+
+_:b3
+    ingen:tail <neural_amp_modeler_lv2_1/output> ;
+    ingen:head <cabsim_IR_loader/in> .
+
+_:b4
+    ingen:tail <neural_amp_modeler_lv2/output> ;
+    ingen:head <cabsim_IR_loader_1/in> .
+
+_:b5
+    ingen:tail <cabsim_IR_loader_1/out> ;
+    ingen:head <playback_1> .
+
+_:b6
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <playback_2> .
+
+_:b7
+    ingen:tail <cabsim_IR_loader/out> ;
+    ingen:head <playback_1> .
+
+_:b8
+    ingen:tail <cabsim_IR_loader_1/out> ;
+    ingen:head <playback_2> .
+
+<neural_amp_modeler_lv2>
+    ingen:canvasX 1262.8 ;
+    ingen:canvasY 210.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 1 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <neural_amp_modeler_lv2/input> ,
+             <neural_amp_modeler_lv2/output> ,
+             <neural_amp_modeler_lv2/input_level> ,
+             <neural_amp_modeler_lv2/output_level> ,
+             <neural_amp_modeler_lv2/:bypass> ;
+    lv2:prototype <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
+    pedal:instanceNumber 0 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<neural_amp_modeler_lv2/input>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2/input>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<neural_amp_modeler_lv2/input_level>
+    ingen:value 3.437500 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2/output_level>
+    ingen:value -2.675737 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2_1>
+    ingen:canvasX 1254.5 ;
+    ingen:canvasY 598.2 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 1 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <neural_amp_modeler_lv2_1/input> ,
+             <neural_amp_modeler_lv2_1/output> ,
+             <neural_amp_modeler_lv2_1/input_level> ,
+             <neural_amp_modeler_lv2_1/output_level> ,
+             <neural_amp_modeler_lv2_1/:bypass> ;
+    lv2:prototype <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
+    pedal:instanceNumber 1 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<neural_amp_modeler_lv2_1/input>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2_1/input>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<neural_amp_modeler_lv2_1/input_level>
+    ingen:value -11.763393 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2_1/output_level>
+    ingen:value 7.120536 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2_1/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader>
+    ingen:canvasX 1963.5 ;
+    ingen:canvasY 497.3 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <cabsim_IR_loader/in> ,
+             <cabsim_IR_loader/out> ,
+             <cabsim_IR_loader/Gain> ,
+             <cabsim_IR_loader/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
+    pedal:instanceNumber 2 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<cabsim_IR_loader/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<cabsim_IR_loader/Gain>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader_1>
+    ingen:canvasX 2475.5 ;
+    ingen:canvasY 251.1 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 1 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <cabsim_IR_loader_1/in> ,
+             <cabsim_IR_loader_1/out> ,
+             <cabsim_IR_loader_1/Gain> ,
+             <cabsim_IR_loader_1/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/cabsim-IR-loader> ;
+    pedal:instanceNumber 3 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<cabsim_IR_loader_1/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader_1/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<cabsim_IR_loader_1/Gain>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<cabsim_IR_loader_1/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:bpb>
+    ingen:value 4.000000 ;
+    lv2:index 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:bpm>
+    ingen:value 120.000000 ;
+    lv2:index 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<:rolling>
+    ingen:value 0 ;
+    lv2:index 2 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<control_in>
+    atom:bufferType atom:Sequence ;
+    lv2:index 3 ;
+    lv2:name "Control In" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_in" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<control_out>
+    atom:bufferType atom:Sequence ;
+    lv2:index 4 ;
+    lv2:name "Control Out" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_out" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<capture_1>
+    lv2:index 5 ;
+    lv2:name "Capture 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_1" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_2>
+    lv2:index 6 ;
+    lv2:name "Capture 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_2" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FL>
+    lv2:index 7 ;
+    lv2:name "Capture Fl" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FL" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FR>
+    lv2:index 8 ;
+    lv2:name "Capture Fr" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FR" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FL-86>
+    lv2:index 9 ;
+    lv2:name "Capture Fl-86" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FL-86" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FR-87>
+    lv2:index 10 ;
+    lv2:name "Capture Fr-87" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FR-87" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FL-88>
+    lv2:index 11 ;
+    lv2:name "Capture Fl-88" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FL-88" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_FR-89>
+    lv2:index 12 ;
+    lv2:name "Capture Fr-89" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_FR-89" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<playback_1>
+    lv2:index 13 ;
+    lv2:name "Playback 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_1" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_2>
+    lv2:index 14 ;
+    lv2:name "Playback 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_2" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FL>
+    lv2:index 15 ;
+    lv2:name "Playback Fl" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FL" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FR>
+    lv2:index 16 ;
+    lv2:name "Playback Fr" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FR" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FL-74>
+    lv2:index 17 ;
+    lv2:name "Playback Fl-74" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FL-74" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FR-76>
+    lv2:index 18 ;
+    lv2:name "Playback Fr-76" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FR-76" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FL-78>
+    lv2:index 19 ;
+    lv2:name "Playback Fl-78" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FL-78" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FR-80>
+    lv2:index 20 ;
+    lv2:name "Playback Fr-80" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FR-80" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FL-82>
+    lv2:index 21 ;
+    lv2:name "Playback Fl-82" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FL-82" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FR-84>
+    lv2:index 22 ;
+    lv2:name "Playback Fr-84" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FR-84" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FL-90>
+    lv2:index 23 ;
+    lv2:name "Playback Fl-90" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FL-90" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_FR-92>
+    lv2:index 24 ;
+    lv2:name "Playback Fr-92" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_FR-92" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<midi_separated_mode>
+    ingen:value 0 ;
+    lv2:index 25 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_loopback>
+    ingen:value 0 ;
+    lv2:index 26 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<>
+    doap:name "Not Tool" ;
+    pedal:unitName "Unknown" ;
+    pedal:unitModel "None" ;
+    pedal:width 0 ;
+    pedal:height 0 ;
+    pedal:addressings <addressings.json> ;
+    pedal:screenshot <screenshot.png> ;
+    pedal:thumbnail <thumbnail.png> ;
+    pedal:version 1 ;
+    ingen:polyphony 1 ;
+    ingen:arc _:b1 ,
+              _:b2 ,
+              _:b3 ,
+              _:b4 ,
+              _:b5 ,
+              _:b6 ,
+              _:b7 ,
+              _:b8 ;
+    ingen:block <neural_amp_modeler_lv2> ,
+                <neural_amp_modeler_lv2_1> ,
+                <cabsim_IR_loader> ,
+                <cabsim_IR_loader_1> ;
+    lv2:port <:bpb> ,
+             <:bpm> ,
+             <:rolling> ,
+             <midi_separated_mode> ,
+             <midi_loopback> ,
+             <control_in> ,
+             <control_out> ,
+             <capture_1> ,
+             <capture_2> ,
+             <capture_FL> ,
+             <capture_FR> ,
+             <capture_FL-86> ,
+             <capture_FR-87> ,
+             <capture_FL-88> ,
+             <capture_FR-89> ,
+             <playback_1> ,
+             <playback_2> ,
+             <playback_FL> ,
+             <playback_FR> ,
+             <playback_FL-74> ,
+             <playback_FR-76> ,
+             <playback_FL-78> ,
+             <playback_FR-80> ,
+             <playback_FL-82> ,
+             <playback_FR-84> ,
+             <playback_FL-90> ,
+             <playback_FR-92> ;
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
+    a lv2:Plugin ,
+        ingen:Graph ,
+        pedal:Pedalboard .
